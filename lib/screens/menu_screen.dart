@@ -1,8 +1,12 @@
-import 'package:animations/screens/apple_watch_screen.dart';
-import 'package:animations/screens/explicit_animations_screen.dart';
-import 'package:animations/screens/implicit_animations_screen.dart';
-import 'package:animations/screens/music_player_screen.dart';
-import 'package:animations/screens/swiping_cards_screen.dart';
+import 'package:animations_app/screens/apple_watch_screen.dart';
+import 'package:animations_app/screens/container_transform_screen.dart';
+import 'package:animations_app/screens/explicit_animations_screen.dart';
+import 'package:animations_app/screens/fade_through_screen.dart';
+import 'package:animations_app/screens/implicit_animations_screen.dart';
+import 'package:animations_app/screens/music_player_screen.dart';
+import 'package:animations_app/screens/rive_screen.dart';
+import 'package:animations_app/screens/shared_axis_screen.dart';
+import 'package:animations_app/screens/swiping_cards_screen.dart';
 import 'package:flutter/material.dart';
 
 class MenuScreen extends StatelessWidget {
@@ -64,6 +68,38 @@ class MenuScreen extends StatelessWidget {
               },
               child: const Text(
                 'Music Player',
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                _goToPage(context, const RiveScreen());
+              },
+              child: const Text(
+                'Rive',
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                _goToPage(context, const ContainerTransformScreen());
+              },
+              child: const Text(
+                'Container Transform',
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                _goToPage(context, const SharedAxisScreen());
+              },
+              child: const Text(
+                'Shared Axis',
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                _goToPage(context, const FadeThroughScreen());
+              },
+              child: const Text(
+                'Fade Through',
               ),
             ),
           ],

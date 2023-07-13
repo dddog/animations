@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-import 'package:animations/screens/music_player_detail_screen.dart';
+import 'package:animations_app/screens/music_player_detail_screen.dart';
 import 'package:flutter/material.dart';
 
 class MusicPlayerScreen extends StatefulWidget {
