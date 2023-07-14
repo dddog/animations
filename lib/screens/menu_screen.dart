@@ -7,6 +7,7 @@ import 'package:animations_app/screens/music_player_screen.dart';
 import 'package:animations_app/screens/rive_screen.dart';
 import 'package:animations_app/screens/shared_axis_screen.dart';
 import 'package:animations_app/screens/swiping_cards_screen.dart';
+import 'package:animations_app/screens/wallet_screen.dart';
 import 'package:flutter/material.dart';
 
 class MenuScreen extends StatelessWidget {
@@ -100,6 +101,14 @@ class MenuScreen extends StatelessWidget {
               },
               child: const Text(
                 'Fade Through',
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                _goToPage(context, const WalletScreen());
+              },
+              child: const Text(
+                'Wallet',
               ),
             ),
           ],
